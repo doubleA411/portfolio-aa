@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 40px;
+    margin: 15px;
+}
+
+.links p {
+    margin-right: 70px;
+}

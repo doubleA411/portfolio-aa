@@ -1,0 +1,93 @@
+.hero {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    
+}
+
+h1 span {
+    background-color: rgba(128, 128, 128, 0.19);
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    /* font-size: 27px; */
+}
+
+/* ------------------------------------------------------- */
+.item1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item1 p {
+    margin: 0;
+}
+
+[cmdk-group-heading] {
+    color: grey;
+    font-size: 12px;
+}
+
+[cmdk-item] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+[cmdk-item]:hover {
+    background-color: rgba(128, 128, 128, 0.105);
+    cursor: pointer;
+}
+
+[cmdk-dialog] {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    max-width: 450px;
+    /* max-height: 85vh; */
+    padding: 25px;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[cmdk-overlay] {
+    background-color: rgba(0, 0, 0, 0.178);
+    position: fixed;
+    inset: 0;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[cmdk-list] {
+    overflow-y: scroll;
+    min-height: 300px;
+    height: var(--cmdk-list-height);
+    max-height: 300px;
+    transition: height 100ms ease;
+}
+
+[cmdk-input] {
+
+    width: 100%;
+    outline: 0;
+    height: 45px;
+    border-radius: 10px;
+    border: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+[cmdk-input]::placeholder {
+    font-family: 'DM Sans', sans-serif;
+    padding: 10px;
+    text-align: start;
+}
