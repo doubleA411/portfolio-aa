@@ -77,12 +77,12 @@ p {
 
 
 /* ------------------------------------------------------- */
-.mail {
+.item {
     display: flex;
     align-items: center;
 }
 
-.mail p {
+.item p {
     margin-left: 10px;
 }
 

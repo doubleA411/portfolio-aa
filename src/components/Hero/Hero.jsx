@@ -4,7 +4,9 @@ import logo from "../../assets/logo.png";
 import { Command } from "cmdk";
 import {
   ArrowRightIcon,
+  DownloadIcon,
   EnvelopeClosedIcon,
+  Link2Icon,
   NotionLogoIcon,
 } from "@radix-ui/react-icons";
 
@@ -54,7 +56,7 @@ function Hero() {
             <Command.Group heading="HOME">
               <Command.Item>
                 <div
-                  className="mail"
+                  className="item"
                   onClick={() =>
                     (window.location = "mailto:doublea.py@gmail.com")
                   }
@@ -65,9 +67,21 @@ function Hero() {
               </Command.Item>
               <Command.Separator />
 
-              <Command.Item>Copy Link</Command.Item>
+              <Command.Item>
+                {" "}
+                <div className="item">
+                  <Link2Icon />
+                  <p>Copy Link</p>
+                </div>{" "}
+              </Command.Item>
               <Command.Separator />
-              <Command.Item>Resume</Command.Item>
+              <Command.Item>
+                {" "}
+                <div className="item">
+                  <DownloadIcon />
+                  <p>Resume</p>
+                </div>{" "}
+              </Command.Item>
             </Command.Group>
           </Command.List>
         </Command.Dialog>
