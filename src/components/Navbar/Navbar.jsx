@@ -5,12 +5,8 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <div >
+      <div>
         <img className="logo" src={logo} alt="" />
-      </div>
-      <div className="links">
-        <p>Twitter</p>
-        <p>Contact</p>
       </div>
     </div>
   );

@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "./Hero.css";
 import logo from "../../assets/logo.png";
 import { Command } from "cmdk";
-import { NotionLogoIcon } from "@radix-ui/react-icons";
+import {
+  ArrowRightIcon,
+  EnvelopeClosedIcon,
+  NotionLogoIcon,
+} from "@radix-ui/react-icons";
 
 function Hero() {
   const [open, setOpen] = React.useState(false);
@@ -22,58 +26,48 @@ function Hero() {
 
   return (
     <div className="hero">
-      <img src={logo} alt="" />
-      <h1>Hey There, I'm Aakash <br />Welcome to my space </h1>
-        <Command />
-      <h1>Press <span>Ctrl + K</span> to continue</h1>
+      <div className="secondary-hero">
+        <p className="name">Aakash S</p>
+        <p className="sub">
+          Developing <span>alpha ,beta and gamma </span>
+        </p>
+        <p className="quote">
+          // trying to build something new that ultimately turns out to already
+          exist. //
+        </p>
+        <div className="continue" onClick={() => setOpen(!open)}>
+          <p>Press</p> <span className="cmdk">ctrl</span>{" "}
+          <span className="cmdk">K</span>
+          <p>to continue</p> <ArrowRightIcon />
+        </div>
+      </div>
       <div className="terminal">
         <Command.Dialog
           open={open}
           onOpenChange={setOpen}
           label="Global Command Menu"
         >
-          <Command.Input placeholder="What would you like to do?" />
+          <Command.Input placeholder="Type a command  or search" />
           <Command.List>
             <Command.Empty>No results found.</Command.Empty>
 
-            <Command.Group heading="Projects">
+            <Command.Group heading="HOME">
               <Command.Item>
-                <div className="item1">
-                  <p>Notion</p>
-                  <NotionLogoIcon />
+                <div
+                  className="mail"
+                  onClick={() =>
+                    (window.location = "mailto:doublea.py@gmail.com")
+                  }
+                >
+                  <EnvelopeClosedIcon />
+                  <p>Send Email</p>
                 </div>
               </Command.Item>
               <Command.Separator />
 
-              <Command.Item>b</Command.Item>
+              <Command.Item>Copy Link</Command.Item>
               <Command.Separator />
-              <Command.Item>c</Command.Item>
-            </Command.Group>
-            <Command.Group heading="Skills">
-              <Command.Item>
-                <div className="item1">
-                  <p>Python</p>
-                  <NotionLogoIcon />
-                </div>
-              </Command.Item>
-              <Command.Separator />
-
-              <Command.Item>JavaScript</Command.Item>
-              <Command.Separator />
-              <Command.Item>c</Command.Item>
-            </Command.Group>
-            <Command.Group heading="Projects">
-              <Command.Item>
-                <div className="item1">
-                  <p>Notion</p>
-                  <NotionLogoIcon />
-                </div>
-              </Command.Item>
-              <Command.Separator />
-
-              <Command.Item>b</Command.Item>
-              <Command.Separator />
-              <Command.Item>c</Command.Item>
+              <Command.Item>Resume</Command.Item>
             </Command.Group>
           </Command.List>
         </Command.Dialog>

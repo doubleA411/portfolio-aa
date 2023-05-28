@@ -11,8 +11,10 @@ function Footer() {
           <img src={slatify} alt="" />
         </div>
         <div className="links">
-          <p>Github</p>
-          <p>LinkedIn</p>
+          <p className="link">github</p>
+          <p className="link">linkedIn</p>
+          <p className="link">twitter</p>
+          <p className="link">instagram</p>
         </div>
       </div>
     </footer>
