@@ -3,9 +3,12 @@ import "./Hero.css";
 import { Command } from "cmdk";
 import {
   ArrowRightIcon,
+  CubeIcon,
   DownloadIcon,
   EnvelopeClosedIcon,
+  LetterCaseCapitalizeIcon,
   Link2Icon,
+  MixIcon,
 } from "@radix-ui/react-icons";
 
 function Hero() {
@@ -87,21 +90,27 @@ function Hero() {
               </Command.Item>
             </Command.Group>
             <Command.Group heading="GENERAL">
-                <Command.Item>
-                  <div className="item">
-                    <p>My Works</p>
-                  </div>
-                </Command.Item>
-                <Command.Item>
-                  <div className="item">
-                    <p>Products</p>
-                  </div>
-                </Command.Item>
-                <Command.Item>
-                  <div className="item">
-                    <p>About Me</p>
-                  </div>
-                </Command.Item>
+              <Command.Item>
+                <div className="item">
+                  <MixIcon />
+                  <p>My Works</p>
+                  <p className="cmd">W</p>
+                </div>
+              </Command.Item>
+              <Command.Item>
+                <div className="item">
+                  <CubeIcon />
+                  <p>Products</p>
+                  <p className="cmd">T</p>
+                </div>
+              </Command.Item>
+              <Command.Item>
+                <div className="item">
+                  <LetterCaseCapitalizeIcon />
+                  <p>About Me</p>
+                  <p className="cmd">A</p>
+                </div>
+              </Command.Item>
             </Command.Group>
           </Command.List>
         </Command.Dialog>

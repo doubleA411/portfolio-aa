@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+p {
+    margin: 0;
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -16,6 +20,30 @@ footer {
     margin: 15px;
 }
 
-.link:hover{
+.link:hover {
     cursor: pointer;
+}
+
+.link {
+    display: flex;
+    align-items: start;
+    margin-right: 25px;
+}
+
+.link p {
+    margin-right: 4px;
+}
+
+.links {
+    display: flex;
+    margin-right: 70px;
+}
+
+.link-icon {
+    color: transparent;
+}
+
+.link p:hover + .link-icon {
+    color: black;
+    transition: ease-out 0.2s;
 }
