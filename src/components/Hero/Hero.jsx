@@ -63,6 +63,7 @@ function Hero() {
                 >
                   <EnvelopeClosedIcon />
                   <p>Send Email</p>
+                  <p className="cmd">S</p>
                 </div>
               </Command.Item>
               <Command.Separator />
@@ -72,6 +73,7 @@ function Hero() {
                 <div className="item">
                   <Link2Icon />
                   <p>Copy Link</p>
+                  <p className="cmd">C</p>
                 </div>{" "}
               </Command.Item>
               <Command.Separator />

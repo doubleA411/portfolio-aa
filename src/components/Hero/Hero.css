@@ -73,6 +73,8 @@ p {
     font-weight: bolder;
 }
 
+
+
 /* font-size: 27px; */
 
 
@@ -80,6 +82,13 @@ p {
 .item {
     display: flex;
     align-items: center;
+}
+
+.cmd {
+    background-color: rgba(128, 128, 128, 0.236);
+    padding: 0px 5px;
+    border-radius: 3px;
+    font-weight: 500;
 }
 
 .item p {
