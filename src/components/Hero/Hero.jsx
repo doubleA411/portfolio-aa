@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./Hero.css";
-import logo from "../../assets/logo.png";
 import { Command } from "cmdk";
 import {
   ArrowRightIcon,
   DownloadIcon,
   EnvelopeClosedIcon,
   Link2Icon,
-  NotionLogoIcon,
 } from "@radix-ui/react-icons";
 
 function Hero() {
@@ -29,7 +27,9 @@ function Hero() {
   return (
     <div className="hero">
       <div className="secondary-hero">
-        <p className="name">Aakash S</p>
+        <p className="name">
+          Aakash S <span>aka Minimal Mind</span>
+        </p>
         <p className="sub">
           Developing <span>alpha ,beta and gamma </span>
         </p>
@@ -82,8 +82,26 @@ function Hero() {
                 <div className="item">
                   <DownloadIcon />
                   <p>Resume</p>
-                </div>{" "}
+                  <p className="cmd">R</p>
+                </div>
               </Command.Item>
+            </Command.Group>
+            <Command.Group heading="GENERAL">
+                <Command.Item>
+                  <div className="item">
+                    <p>My Works</p>
+                  </div>
+                </Command.Item>
+                <Command.Item>
+                  <div className="item">
+                    <p>Products</p>
+                  </div>
+                </Command.Item>
+                <Command.Item>
+                  <div className="item">
+                    <p>About Me</p>
+                  </div>
+                </Command.Item>
             </Command.Group>
           </Command.List>
         </Command.Dialog>
