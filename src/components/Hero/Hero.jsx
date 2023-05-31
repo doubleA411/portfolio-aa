@@ -34,7 +34,7 @@ function Hero() {
           Aakash S <span>aka Minimal Mind</span>
         </p>
         <p className="sub">
-          Developing <span>alpha ,beta and gamma </span>
+          developing <span>alpha ,beta and gamma </span>
         </p>
         <p className="quote">
           // trying to build something new that ultimately turns out to already

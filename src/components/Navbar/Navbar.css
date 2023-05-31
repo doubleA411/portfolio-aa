@@ -9,3 +9,24 @@
     width: 40px;
     margin: 15px;
 }
+
+
+
+.terminal {
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.nav-links {
+    display: flex;
+    margin: 18px;
+    align-items: center;
+}
+
+
+
+.terminal:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.178);
+    transition: ease-out 0.2s;
+}
