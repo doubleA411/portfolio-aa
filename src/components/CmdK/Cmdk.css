@@ -1,0 +1,92 @@
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.cmd {
+    background-color: rgba(128, 128, 128, 0.236);
+    padding: 0px 5px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.item p {
+    margin-left: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.name>span {
+    font-size: 25px;
+    /* font-weight: 400; */
+    color: grey;
+}
+
+
+[cmdk-group-heading] {
+    color: grey;
+    font-size: 12px;
+}
+
+[cmdk-item] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+[cmdk-item]:hover {
+    background-color: rgba(128, 128, 128, 0.105);
+    cursor: pointer;
+}
+
+[cmdk-dialog] {
+    background-color: white;
+
+    border-radius: 10px;
+    box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110vw;
+    max-width: 450px;
+    max-height: 85vh;
+    padding: 10px;
+    animation: contentShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[cmdk-overlay] {
+    background-color: rgba(0, 0, 0, 0.178);
+    position: fixed;
+    inset: 0;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[cmdk-list] {
+    overflow-y: scroll;
+    min-height: 300px;
+    height: var(--cmdk-list-height);
+    max-height: 300px;
+    transition: height 100ms ease;
+}
+
+[cmdk-input] {
+    background-color: transparent;
+    width: 100%;
+    outline: 0;
+    height: 35px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+[cmdk-input]::placeholder {
+    font-family: 'DM Sans', sans-serif;
+
+    text-align: start;
+}
