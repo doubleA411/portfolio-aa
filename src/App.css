@@ -15,3 +15,8 @@ body {
 .App {
     text-align: center;
 }
+
+
+Link {
+    text-decoration: none;
+}

@@ -3,7 +3,6 @@ import "./Footer.css";
 import slatify from "../../assets/slatify-logo.png";
 import planb from "../../assets/plab-logo.png";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react";
-import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer>

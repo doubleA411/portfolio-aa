@@ -24,8 +24,8 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <CmdK open={open} setOpen={setOpen} />
       <Router>
+        <CmdK open={open} setOpen={setOpen} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/myworks" element={<MyWorks />} />
