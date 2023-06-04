@@ -1,21 +1,21 @@
-import React from 'react'
-import { useRef } from 'react';
+import React from "react";
+import { useRef } from "react";
 import { Command } from "cmdk";
-import { Link } from 'react-router-dom';
-import './Cmdk.css'
+import { Link } from "react-router-dom";
+import "./Cmdk.css";
 import * as Popover from "@radix-ui/react-popover";
 import {
   CubeIcon,
   DownloadIcon,
   EnvelopeClosedIcon,
+  HomeIcon,
   LetterCaseCapitalizeIcon,
   Link2Icon,
   MixIcon,
 } from "@radix-ui/react-icons";
 
-function CmdK({open , setOpen}) {
-
-  const containerElement = useRef(null)
+function CmdK({ open, setOpen }) {
+  const containerElement = useRef(null);
   return (
     <div className="terminal" ref={containerElement}>
       <Popover.Root
@@ -67,6 +67,15 @@ function CmdK({open , setOpen}) {
               </Command.Group>
               <Command.Group heading="GENERAL">
                 <Command.Item>
+                  <Link to="/" className="direct">
+                    <div className="item">
+                      <HomeIcon />
+                      <p>Home</p>
+                      <p className="cmd">H</p>
+                    </div>
+                  </Link>
+                </Command.Item>
+                <Command.Item>
                   <Link to="/myworks" className="direct">
                     <div className="item">
                       <MixIcon />
@@ -102,4 +111,4 @@ function CmdK({open , setOpen}) {
   );
 }
 
-export default CmdK
+export default CmdK;
