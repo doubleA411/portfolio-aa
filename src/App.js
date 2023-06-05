@@ -2,7 +2,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import React, { useState,useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MyWorks from "./pages/MyWorks";
+import MyWorks from "./pages/MyWorks/MyWorks";
 import Products from "./pages/Products";
 import About from "./pages/About";
 import CmdK from "./components/CmdK/CmdK";
