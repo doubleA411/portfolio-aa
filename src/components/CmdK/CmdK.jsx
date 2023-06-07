@@ -56,14 +56,20 @@ function CmdK({ open, setOpen }) {
                   </div>
                 </Command.Item>
                 <Command.Separator />
-                <Command.Item>
-                  {" "}
-                  <div className="item">
-                    <DownloadIcon />
-                    <p>Resume</p>
-                    <p className="cmd">R</p>
-                  </div>
-                </Command.Item>
+                <Link style={{textDecoration:"none", color:"black"}}
+                  to={
+                    "https://docs.google.com/document/d/1qGZgNl9-aM_soJHf1iGwUy53EGUauFO_/edit?usp=sharing&ouid=102398331261899003362&rtpof=true&sd=true"
+                  }
+                >
+                  <Command.Item>
+                    {" "}
+                    <div className="item">
+                      <DownloadIcon />
+                      <p>Resume</p>
+                      <p className="cmd">R</p>
+                    </div>
+                  </Command.Item>
+                </Link>
               </Command.Group>
               <Command.Group heading="GENERAL">
                 <Command.Item>

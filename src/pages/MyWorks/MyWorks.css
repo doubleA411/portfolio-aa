@@ -20,7 +20,7 @@
   margin-top: 50px;
 }
 
-.work > .title {
+.title {
   font-size: 36px;
   font-weight: 500;
 }
@@ -28,6 +28,7 @@
 .work > .desc {
   margin-bottom: 30px;
   font-size: 20px;
+  color: grey;
 }
 
 .work-link{
