@@ -1,3 +1,8 @@
+
+.flex-box {
+  display: flex;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -9,6 +14,18 @@
   margin-top: 30px;
   font-size: 85px;
   margin-bottom: 40px;
+}
+
+
+
+
+.hover-comp {
+  width: 50%;
+  border: 1px solid black;
+  margin: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .works {
