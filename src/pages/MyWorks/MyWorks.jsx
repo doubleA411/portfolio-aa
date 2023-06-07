@@ -11,7 +11,7 @@ function MyWorks() {
     <div className="mywork">
       <Navbar />
       <div className="main">
-        <h1>My Works</h1>
+        <p className="page-name">My Works</p>
 
         <GitHubCalendar
           username="doubleA411"

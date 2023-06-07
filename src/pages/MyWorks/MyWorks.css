@@ -1,18 +1,17 @@
-
-
-.react-activity-calendar {
-   
-  margin: 0px 40px 0px 40px;
-
-}
-
 .main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 60px;
 }
 
-.works{
+.main .page-name {
+  margin-top: 30px;
+  font-size: 85px;
+  margin-bottom: 40px;
+}
+
+.works {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -25,13 +24,13 @@
   font-weight: 500;
 }
 
-.work > .desc {
+.work>.desc {
   margin-bottom: 30px;
   font-size: 20px;
   color: grey;
 }
 
-.work-link{
+.work-link {
   text-decoration: none;
   color: black;
 }
@@ -40,7 +39,7 @@
   width: 100%;
 }
 
-.works  > .sub {
+.works>.sub {
   color: grey;
   text-align: start;
   margin-left: 0px;
@@ -49,6 +48,6 @@
 
 
 .allworks {
- margin-top: 20px;
- margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
